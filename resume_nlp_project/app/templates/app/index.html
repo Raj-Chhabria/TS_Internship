@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+</head>
+<body>
+    
+    <!-- {% for i in res_data %}
+    <h1>ID: </h1> {{i.id}}
+    <h1>Category:</h1> {{i.Category}}
+    <hr>
+    <h1>Resume:</h1> {{i.Resume}}
+    <hr>
+    <h1>Raw HTML:</h1> {{i.Raw_html}}
+    <hr>
+    <h1>Cleaned Resume:</h1> {{i.Clean_Resume}}
+    <hr>
+    <h1>Skills:</h1> {{i.skills}}
+    <br><hr><hr><hr><br>
+    {% endfor %} -->
+    <!-- <h1>ID: </h1>{{random_obj.id}} -->
+    
+    <table style="width:100%">
+        <tr>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Resume</th>
+            <th>Raw HTML</th>
+            <th>Cleaned Resume</th>
+            <th>Skills</th>
+          </tr>
+          <tr>
+            <td>{{random_obj.id}}</td>
+            <td>{{random_obj.Category}}</td>
+            <td>{{random_obj.Resume}}</td>
+            <td>{{random_obj.Raw_html}}</td>
+            <td>{{random_obj.Clean_Resume}}</td>
+            <td>{{random_obj.skills}}</td>
+          </tr>
+    </table>
+
+
+</body>
+</html>
